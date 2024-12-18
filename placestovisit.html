@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="./css/placestovisit.css">
+    <script src="./js/Js/placestovisitscript.js"></script>
+    <script src="./js/mainscript.js"></script>
+</head>
+<body>
+    <div id="back">
+        <img src="./img/palce.jpg">
+    </div>
+    <div id="welcome"">
+        <h1>Places To Visit</h1>
+    </div>
+
+    <div id="navi" onmouseenter="show()" onmouseleave="hide()">
+        <div id="nav" >
+            <ul>
+                <li> <a href="./index.html">Home</a></li>
+                <li> <a href="monthlyspeciality.html">Monthly Speciality</a></li>
+                <li> <a href="./tripwithus.html">Trip With US</a></li>
+                <li> <a href="./contactus.html">Contact Us</a></li>
+                <li> <a href="./todolist.html">To Do List</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="rnavi">
+        <ul>
+            <li onclick="goto(Western)">Western Province</li>
+            <li onclick="goto(Central)">Central Province</li>
+            <li onclick="goto(Southern)">Southern Province</li>
+            <li onclick="goto(Uva)">Uva Province</li>
+            <li onclick="goto(Sabaragamuwa)">Sabaragamuwa Province</li>
+            <li onclick="goto(NorthW)">North Western Province</li>
+            <li onclick="goto(NorthC)">North Central Province</li>
+            <li onclick="goto(Nothern)">Nothern Province</li>
+            <li onclick="goto(Eastern)">Eastern Province</li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="Western">
+            <h1>Western Province</h1>
+
+            <h2>Water World Lanka</h2>
+            <img src="./img/Place/1.jpg" alt="">
+
+            <h2>Negombo Lagoon</h2>
+            <img src="./img/Place/2.jpg" alt="">
+
+            <h2>Negombo Lagoon</h2>
+            <img src="./img/Place/3.jpg" alt="">
+        </div>
+    
+        <div id="Central">
+            <h1>Central Province</h1>
+
+            <h2>Highlights Of Sigiriya,Kandy,Nuwara Eliya ,Ella & Udawalawe</h2>
+            <img src="./img/Place/4.jpg" alt="">
+
+            <h2>Knuckles mountain trekking</h2>
+            <img src="./img/Place/5.jpg" alt="">
+
+
+            
+        </div>
+    
+        <div id="Southern">
+            <h1>Southern Province</h1>
+
+            <h2>Sinharaja Rain forest tours</h2>
+            <img src="./img/Place/6.jpg" alt="">
+
+            <h2>Whale Watching Mirissa with Eagle Eye</h2>
+            <img src="./img/Place/7.jpg" alt="">
+
+            <h2>Safari - Yala National Park</h2>
+            <img src="./img/Place/8.jpg" alt="">
+
+            <h2>Cook with Wasantha</h2>
+            <img src="./img/Place/9.jpg" alt="">
+        </div>
+    
+        <div id="Uva">
+            <h1>Uva Province</h1>
+
+            <h2>Ella 9 arch bridge</h2>
+            <img src="./img/Place/10.jpeg" alt="">
+
+            <h2>Haputale</h2>
+            <img src="./img/Place/11.jpg" alt="">
+
+            <h2>Badulla</h2>
+            <img src="./img/Place/12.jpg" alt="">
+        </div>
+    
+        <div id="Sabaragamuwa">
+           <h1>Sabaragamuwa Province</h1>
+
+           <h2>Pinnawala</h2>
+           <img src="./img/Place/13.jfif" alt="">
+
+           <h2>Kitulgala</h2>
+           <img src="./img/Place/14.jpg" alt="">
+        </div>
+    
+        <div id="NorthW">
+            <h1>North West Province</h1>
+
+            <h2>Kitesurfing Adventure in Kalpitiya</h2>
+            <img src="./img/Place/15.jpg" alt="">
+
+            <h2>Chilaw</h2>
+            <img src="./img/Place/16.jpg" alt="">
+
+            <h2>Puttalam</h2>
+            <img src="./img/Place/17.jpeg" alt="">
+        </div>
+    
+        <div id="NorthC">
+            <h1>North Central Province</h1>
+
+            <h2>Anuradhapura</h2>
+            <img src="./img/Place/18.jpg" alt="">
+
+            <h2>Habarana</h2>
+            <img src="./img/Place/19.jpg" alt="">
+
+            <h2>Polonnaruwa</h2>
+            <img src="./img/Place/20.jpg" alt="">
+
+            <h2>Aralaganwila</h2>
+            <img src="./img/Place/21.jpg" alt="">
+        </div>
+    
+        <div id="Nothern">
+            <h1>Northern Province</h1>
+
+            <h2>Jaffna</h2>
+            <img src="./img/Place/22.jpg" alt="">
+
+            <h2>Mannar</h2>
+            <img src="./img/Place/23.jpg" alt="">
+
+            <h2>Kilinochchi</h2>
+            <img src="./img/Place/24.jpg" alt="">
+
+            <h2>Mullaittivu</h2>
+            <img src="./img/Place/25.jpg" alt="">
+        </div>
+    
+        <div id="Eastern">
+            <h1>Eastern Province</h1>
+
+            <h2>Trincomalee</h2>
+            <img src="./img/Place/26.jpg" alt="">
+
+            <h2>Arugam Bay</h2>
+            <img src="./img/Place/27.jfif" alt="">
+
+            <h2>Nilaveli</h2>
+            <img src="./img/Place/28.jfif" alt="">
+
+            <h2>Kalkudah</h2>
+            <img src="./img/Place/29.jpg" alt="">
+        </div>
+    </div>
+
+    <footer id="fot">   
+
+    </footer>
+        <script src="./js/mainapp.js"></script>
+        <script src="./js/Vjs/placestovisitapp.js"></script>
+    </body>
+</html>

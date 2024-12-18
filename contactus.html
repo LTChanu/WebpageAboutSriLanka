@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="./css/contactus.css">
+    <script src="./js/Js/contactusscript.js"></script>
+    <script src="./js/mainscript.js"></script>
+</head>
+<body>
+    <div id="back">
+        <img src="./img/contact.jpg">
+    </div>
+    <div id="welcome"">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div id="navi" onmouseenter="show()" onmouseleave="hide()">
+        <div id="nav" >
+            <ul>
+                <li> <a href="./index.html">Home</a></li>
+                <li> <a href="placestovisit.html">Places To Visit</a></li>
+                <li> <a href="monthlyspeciality.html">Monthly Speciality</a></li>
+                <li> <a href="./tripwithus.html">Trip With US</a></li>
+                <li> <a href="./todolist.html">To Do List</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="mail">
+        <p id="title">Send Massage To Us</p><br>
+        
+        <p>Your Name</p>
+        <input type="text" placeholder="Enter your name" v-model="name"><br><br>
+        
+        <p>Your Email</p>
+        <input type="text" placeholder="Enter your email" v-model="email"><br><br>
+
+        <p>Message</p>
+        <textarea id="msg" type="text" placeholder="Type your message" v-model="massage"></textarea><br><br>
+
+        <button v-on:click="send">Send</button>
+    </div>
+
+    <div id="socil">
+        <a href="https://www.instagram.com/chanu_online" target="_blank"><img src="./img/icon/insta.png"  ></a><br>
+        
+        <a href="https://www.facebook.com/thanula.chanuka" target="_blank"><img src="./img/icon/fb.png" alt=""></a><br>
+        
+        <a href="https://www.linkedin.com/in/chanuka-liyanage" target="_blank"><img src="./img/icon/linkdin.png" alt=""></a><br>
+    </div>
+    
+    
+
+    <footer id="fot">   
+
+    </footer>
+
+        <script src="./js/mainapp.js"></script>
+        <script src="./js/Vjs/contactusapp.js"></script>
+    </body>
+</html>

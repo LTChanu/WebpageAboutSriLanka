@@ -1,0 +1,65 @@
+/*******************Right Navigation****************************/
+#rnavi{
+    background-image: url(../img/Arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    content-visibility: hidden;
+    position:absolute;
+    width: 3%;
+    height: 100%;
+    background-size: 100%;
+    position: fixed;
+    z-index: 10;
+    transition: width 2s , background-color 2s;
+}
+
+#rnavi:hover{
+    background-color:rgb(40, 38, 44);
+    background-image:none;
+    content-visibility: visible;
+    margin: auto;
+    position:absolute;
+    width: 10%;
+    height: 100%;
+    background-size: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+#rnavi ul{
+    padding: 10px;
+    text-align: left;
+    list-style: none;
+}
+
+#rnavi ul li{
+    padding-top: 10%;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/*************************************************************/
+
+
+/*************content********************/
+
+#content{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+#content img{
+    max-width: 80%;
+}
+
+#content h1{
+    padding-top: 200px;
+}
+
+#content h2{
+    padding-top: 50px;
+}
+
+/****************************************/

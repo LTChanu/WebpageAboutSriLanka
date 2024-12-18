@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="./css/todolist.css">
+    <script src="./js/Js/todolistscript.js"></script>
+    <script src="./js/mainscript.js"></script>
+</head>
+<body>
+    <div id="back">
+        <img src="./img/ToDo.jpg">
+    </div> 
+    <div id="welcome"">
+        <h1>To Do List</h1>
+    </div>
+
+    <div id="navi" onmouseenter="show()" onmouseleave="hide()">
+        <div id="nav" >
+            <ul>
+                <li> <a href="./index.html">Home</a></li>
+                <li> <a href="placestovisit.html">Places To Visit</a></li>
+                <li> <a href="monthlyspeciality.html">Monthly Speciality</a></li>
+                <li> <a href="./tripwithus.html">Trip With US</a></li>
+                <li> <a href="./contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="webtodo">
+        <h1>List Your Tasks</h1>
+        <div>
+            <input class="inp" type="text" placeholder="New Task" v-model="onetask">
+            <button id="add" v-on:click="addTask">{{btn}}</button>
+
+
+        </div><br><br><br>
+	<ul>
+            <li v-for="(it, index) in webtaskList" :key="index">
+                {{ it }}
+                <button v-on:click="updateTask(index)" style="background-image: url(./img/icon/update.png);"></button>
+                <button v-on:click="removeTask(index)" style="background-image: url(./img/icon/delete.png);"></button>
+            </li>
+        </ul>
+
+        
+    
+    </div>    
+    <footer id="foot">   
+        
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./js/Vjs/todolistapp.js"></script>
+    </body>
+</html>
